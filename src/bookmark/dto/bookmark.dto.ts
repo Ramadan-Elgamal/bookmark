@@ -8,3 +8,7 @@ export const CreateBookmarkSchema = Type.Object({
 });
 
 export type CreateBookmarkDto = Static<typeof CreateBookmarkSchema>;
+
+export const UpdateBookmarkSchema = Type.Partial(CreateBookmarkSchema);
+
+export type UpdateBookmarkDto = Static<typeof UpdateBookmarkSchema>;
